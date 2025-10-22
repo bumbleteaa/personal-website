@@ -1,0 +1,66 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/preflight" layer(base);
+@import "tailwindcss/utilities" layer(utilities);
+
+@theme {
+    --color-primary-50: #f0f9ff;
+    --color-primary-100: #e0f2fe;
+    --color-primary-500: #3b82f6;
+    --color-primary-700: #1d4ed8;
+
+    --color-secondary-100: #fef3c7;
+    --color-secondary-500: #f59e0b;
+
+    --color-accent: #10b981;
+    --color-background: #f9fafb;
+    --color-surface: #ffffff;
+
+    --color-text-muted: #6b7280; 
+
+    --font-sans: Inter, sans-serif;
+    --font-serif: 'Merriweather', serif;
+
+    --font-size-h1: 2.25rem; /* 36px */
+    --font-size-h1--line-height: 2.5rem; 
+    --font-size-h2: 1.875rem; /* 30px */
+    --font-size-h2--line-height: 2.25rem;
+    --font-size-h3: 1.5rem; /* 24px */
+    --font-size-h3--line-height: 2rem;
+    --font-size-body: 1rem; /* 16px */
+    --font-size-body--line-height: 1.75rem;
+}
+
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        font-family: var(--font-sans);
+        background-color: var(--color-background);
+        margin: 0;
+        padding: 0;
+        -webkit-smooth-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1{
+        font-size: var(--font-size-h1);
+        line-height: var(--font-size-h1--line-height);
+        font-weight: bold;
+    }
+    h2{
+        font-size: var(--font-size-h2);
+        line-height: var(--font-size-h2--line-height);
+        font-weight: 600;
+    }
+    h3{
+        font-size: var(--font-size-h3);
+        line-height: var(--font-size-h3--line-height);
+        font-weight: 600;
+    }
+    p{
+        font-size: var(--font-size-body);
+        line-height: var(--font-size-body--line-height);
+    }
+}
