@@ -1,5 +1,5 @@
 ---
-title: "My Blog"
+title: "My Initial Blog"
 date: "2025-10-18"
 tags: "test"
 ---
